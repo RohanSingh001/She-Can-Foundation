@@ -1,0 +1,94 @@
+footer {
+  width: 100%;
+  height: 80vh;
+  background-color: var(--text);
+  display: flex;
+}
+
+footer .footLogo {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 1px solid black;
+}
+
+.footLogo .bottomLogo {
+  width: 50px;
+  margin-bottom: 15px;
+  height: 50px;
+  border-radius: 0.4rem;
+}
+
+.footLogo .footname {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--bg);
+}
+
+.footLogo .footLine {
+  font-size: 0.8rem;
+  color: var(--bg);
+}
+
+footer .footLinks {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.footLinks .innerLinks {
+  width: 35%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.innerLinks .linkHead {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--bg);
+  margin-bottom: 20px;
+}
+
+.innerLinks ul li {
+  list-style: none;
+  font-size: 1rem;
+  color: var(--bg);
+  margin-bottom: 6px;
+  text-decoration: underline;
+  text-decoration-color: var(--bg);
+}
+
+.innerLinks ul li a {
+  font-size: 1rem;
+  color: var(--bg);
+}
+
+.innerLinks ul li a:hover {
+  color: var(--btn-red);
+  text-decoration-color: var(--btn-red);
+}
+
+footer .copyRights {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .copyRights p {
+  font-size: 0.8rem;
+  color: var(--bg);
+  text-align: center;
+}

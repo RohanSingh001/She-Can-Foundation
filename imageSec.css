@@ -1,0 +1,59 @@
+/* Section Working Images */
+
+.mainContant .workImg {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.workImg .workImgHead {
+  text-decoration: underline;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.workImg .cards {
+  width: 80%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  perspective: 1200px;
+}
+
+.cards .card {
+  width: 80%;
+  height: 30%;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 10px 1px var(--text);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform-origin: center center;
+  will-change: transform;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  animation: flipCard 0.8s ease forwards;
+  box-shadow: 8px 12px 20px 4px var(--text);
+}
+
+.card1 {
+  background: url("Images/1-AR0eoOKWL4sXJRgY.avif") no-repeat center
+    center/cover;
+}
+
+.card2 {
+  background: url("Images/1682903599444-m5KPBaLG4LiW4P7B.avif") no-repeat center
+    center/cover;
+}
+
+.card3 {
+  background: url("Images/copy-of-brown-simple-happy-birthday-poster-Yg27zMJrD9tBN5zQ.avif")
+    no-repeat center center/cover;
+}
