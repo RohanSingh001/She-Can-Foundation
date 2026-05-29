@@ -17,11 +17,57 @@
       sizes="any"
       type="image/png"
     />
-    <link rel="apple-touch-icon" href="logo/she-YlenJon1O7ieeEoa.avif" /> 
+    <link rel="apple-touch-icon" href="logo/she-YlenJon1O7ieeEoa.avif" />
 
-    <title>She Can Foundation - Foam</title>
+    <title>She Can Foundation - Joining Form</title>
+    <link rel="stylesheet" href="form.css" />
   </head>
   <body>
-    <h1>Foam</h1>
+    <div class="fullCnt">
+      <h1 class="foamHead">Joining Form for She Can Foundation</h1>
+      <form class="mainForm" id="joinForm" action="./submit.html" method="get" target="_self">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="message">Why do you want to join She Can Foundation?</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <input type="submit" value="Submit" />
+      </form>
+
+      <label for="email">Email Address:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="phone">Phone Number:</label><br />
+      <input type="tel" id="phone" name="phone" required /><br /><br />
+
+      <label for="message">Why do you want to join She Can Foundation?</label
+      ><br />
+      <textarea
+        id="message"
+        name="message"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+
+    <script>
+      document
+        .getElementById("joinForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          window.location.href = "./submit.html";
+        });
+    </script>
   </body>
 </html>
